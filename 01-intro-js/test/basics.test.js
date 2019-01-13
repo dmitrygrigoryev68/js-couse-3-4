@@ -52,11 +52,11 @@ describe('JS Basics', function () {
         });
 
         it('should be parse object from json', function () {
-            var json = '{"ok":true, metadata: {"date_start": 1533108640}'
+            var json = '{"ok":true,"date_start": 1533108640}'
             
             // see JSON.parse function, use it and find key date_start
-            obj = JSON.parse(json);
-            dateStart = alert(obj.metadata.date_start);
+            
+            var dateStart = JSON.parse(json)["date_start"];
             
             assert.equal(dateStart, 1533108640);
         });
@@ -86,8 +86,8 @@ describe('JS Basics', function () {
         });
 
         it('should be able to sort array', function () {
-            var arr = [23, 23, 4, 5, 123, 7, 32, 13, 13, 9]
-           arr =  arr.sort();
+            var arr1 = [23, 23, 4, 5, 123, 7, 32, 13, 13, 9]
+           arr =  arr1.sort();
 
             // read about .sort function
             assert.equal(arr, [123, 13, 13, 23, 23, 32, 4, 5, 7, 9]);
