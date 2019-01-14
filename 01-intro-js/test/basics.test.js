@@ -4,8 +4,8 @@ describe('JS Basics', function () {
     describe('Numbers', function () {
         it('should be able define variables and add them', function () {
             // define variables and add them
-            var x = 1;
-            var y = 1;
+            var x = 2;
+            var y = 0;
             assert.equal(x + y, 2);
         });
 
