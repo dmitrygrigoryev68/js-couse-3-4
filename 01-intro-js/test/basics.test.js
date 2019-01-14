@@ -90,7 +90,7 @@ describe('JS Basics', function () {
            arr =  arr1.sort();
 
             // read about .sort function
-            assert.equal(arr, [123, 13, 13, 23, 23, 32, 4, 5, 7, 9]);
+            assert.deepEqual(arr, [123, 13, 13, 23, 23, 32, 4, 5, 7, 9]);
         });
     });
 
