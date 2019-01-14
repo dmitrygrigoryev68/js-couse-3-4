@@ -52,7 +52,11 @@ describe('JS Basics', function () {
         });
 
         it('should be parse object from json', function () {
+<<<<<<< HEAD
             var json = '{"ok":true,"date_start": 1533108640}'
+=======
+            var json = '{"ok":true, "metadata": {"date_start": 1533108640} }'
+>>>>>>> 3b322fe57e8010d4434d254a00f6a00929403507
             
             // see JSON.parse function, use it and find key date_start
             
