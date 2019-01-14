@@ -38,4 +38,4 @@ function calculator(opreration, a, b){
     return operationsDB[opreration](a, b);
 }
 
-console.log(calculator("*", 897, 8713));
+console.log(calculator("/", 20, 20));
