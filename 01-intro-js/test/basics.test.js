@@ -21,7 +21,7 @@ describe('JS Basics', function () {
             var a = 42.94;
 
             // do something to round the number
-            a = Math.round(a) - 1;
+            a = Math.floor(a);
             assert.equal(a, 42);
         });
 
@@ -46,9 +46,9 @@ describe('JS Basics', function () {
         });
 
         it('should be find object value by dynamic key', function () {
-            var obj = { a: { b: { d: "foo" } }, "select Key by name": 42 }
+            var obj = { a: { b: { d: "foo" } }, c: 42 }
             
-            assert.equal(obj["select Key by name"], 42);
+            assert.equal(obj.c, 42);
         });
 
         it('should be parse object from json', function () {
@@ -62,9 +62,10 @@ describe('JS Basics', function () {
         });
 
         it('should be set objet key', function () {
-            var obj = { a: { b: "Js Rocks!" }, c: 42 }
-
+          
+            var obj = { a: { b: { d: "foo" } }, c: 42 }
             // set instead as value to key b new value to make test pass
+            obj.a.b = "Js Rocks!"
             assert.equal(obj.a.b, "Js Rocks!")
         });
     });
@@ -79,9 +80,10 @@ describe('JS Basics', function () {
         });
 
         it('should to push and pop from array', function () {
-            var array = [0,1, 2, 3, 4, 5, 6, 7, 8, 9]
+            var array = [1, 2, 3, 4, 5, 6, 7, 8, 9]
             
             // read about push method on array
+            array.push(0);
             assert.equal(array.length, 10);
         });
 
