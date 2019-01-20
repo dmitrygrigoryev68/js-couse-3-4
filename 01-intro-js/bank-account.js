@@ -1,15 +1,23 @@
 // function getNewBankAccount(creditLimit) {
+
+var balance = 0;
 function getNewBankAccount() {
     return {
-        balance: 0,
+        balance: balance,
         deposit: function(amount){
-            // deposit money here
+            this.balance = this.balance + amount
         },
     
         widthraw: function(money){
-            // widthraw money here
+         //  if(money>balance){money = 0;}
+            
+            this.balance = this.balance - money
         }
     }
 } 
 
+
+
+bbb1  = getNewBankAccount().deposit(100);
+console.log(bbb1);
 module.exports = getNewBankAccount;
