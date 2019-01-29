@@ -1,12 +1,56 @@
-body {
-    background: #c8f7b4;
+body{
+    background-color: lightblue;
 }
 
-.huge-label {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 72px;
-}
-
-.red-border {
-    border: 10px #000 dashed;
-}
+.heart {
+    width: 100px;
+    height: 100px;
+    margin: 200 auto;
+    position: relative;
+    padding-top: 100px;
+    
+    animation-name: grow;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+  }
+  .square {
+    width: 96px;
+    height: 96px;
+    background-color: #ff2222;
+    position: absolute;
+    left: 50%;
+    margin-left: -48px;
+    transform: rotate(-45deg);
+  }
+  
+  .circle {
+    background-color: #ff2222;
+    width: 96px;
+    height: 96px;
+    left: 50%;
+    position: absolute;
+    margin-left: -48px;
+    margin-top: -37px;
+    border-radius: 50%;
+  }
+  
+  .circle-l {
+    margin-left: -86px;
+  }
+  
+  .circle-r {
+    margin-left: -10px;
+  }
+  
+  @keyframes grow {
+    from {
+      transform: scale(1s);
+    }
+    
+    to {
+      transform: scale(1.5);
+    }
+  }
+  
+  
