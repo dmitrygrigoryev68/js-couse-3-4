@@ -160,10 +160,6 @@
     }
   }
   
-  .bounceInLeft {
-    -webkit-animation-name: bounceInLeft;
-    animation-name: bounceInLeft;
-  }
   @keyframes bounceOutRight {
     20% {
       opacity: 1;
