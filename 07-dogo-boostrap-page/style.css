@@ -1,6 +1,10 @@
+body{
+    background-color: lightblue;
+}
+
 .doge-image {
     width: 300px;
-    padding: 20px;
+    padding: 2px;
 }
 
 .dogo-subscribe {
@@ -11,6 +15,6 @@
 .dogo-subscribe-button {
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 0%;
     transform: translate(-50%, -50%);
 }
