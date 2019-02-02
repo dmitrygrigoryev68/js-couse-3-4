@@ -2,19 +2,85 @@ body{
     background-color: lightblue;
 }
 
-.doge-image {
+.city-image {
     width: 300px;
-    padding: 2px;
+    box-shadow: 0 9px 25px -5px grey;
+    padding: 1px;
 }
+
 
 .dogo-subscribe {
     position: relative;
-    height: 200px;
+    box-shadow: 0 9px 25px -5px grey;
+	height: 200px;
+	padding: 1px;
+}
+#container{
+	
+	box-shadow: 0 9px 25px -5px grey;
+	text-align: center;
+	border-radius: 5px;
+	margin: 0em auto;
+	background: skyblue;
+	height: 180px;
+	width: 300px;
+	padding: 1em;
+	
+	position: absolute;
+	bottom: 0;
+	right: 10;
+	left: 10;
+	top: 200;	
+	
+	
 }
 
-.dogo-subscribe-button {
-    position: absolute;
-    left: 50%;
-    top: 0%;
-    transform: translate(-50%, -50%);
+#container h2 {
+    -webkit-text-fill-color: black;
+	font-family: 'Playfair Display', serif;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size:cover;
+	letter-spacing: 2px;
+	font-size: 1.5em;
+	font: bold;
+	margin: 0;
+
+	
+	
 }
+
+#container input {
+	width: 210px;
+	display: inline-block;
+	text-align: center;
+	border-radius: 7px;
+    background: #eee;
+    box-shadow: 0 9px 25px -5px grey;
+	padding: 1em 2em;
+	outline: none;
+	border: none;
+	color: #222;
+	transition: 0.3s linear;
+}
+::placeholder{color: #999;}
+#container input:focus {background: rgba(0, 0, 333, 0.10);}
+
+#container button {
+	background: blue;
+	box-shadow: 0 9px 25px -5px grey;
+	font-family: 'Abel', sans-serif;
+	padding: 0.5em 1.9em;
+	margin: 2em 0 0 0;
+	border-radius: 7px;
+	font-size: 1.4em;
+	cursor: pointer;
+	color: #FFFFFF;
+	font-size: 1em;
+	outline: none;
+	border: none;
+	transition: 0.3s linear;
+
+}
+#container button:hover{transform: translatey(2px);}
+#container button:active{transform: translatey(5px);}

@@ -2,8 +2,8 @@
 
     var data = {
         image: './Photo.jpg',
-        greeting: 'Hello hooman!',
-        intro: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages"
+        greeting: 'Hi guys!',
+        intro: "My name is Dmitry Grigoryev. I was born in USSR and spend half of my life there. Now I live in Berlin. I very like to travel and my favorite cities are Moscow, New York and Rome. If you have an interest in my stories, don't hasistate and subscribe me"
     }
 
     var dogoImageElement = document.getElementById('dogo-image');
